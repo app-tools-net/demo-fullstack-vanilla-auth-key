@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Full-Stack App</title>
+    
+    <!-- FIXED CORE STYLING ENGINE: Official browser runtime for compiling utility styling classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Clean external stylesheet link for buyer modifications -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased flex items-center justify-center min-h-screen px-4">
+
+    <!-- Login Box Card Layout -->
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-sm w-full shadow-2xl">
+        <div class="text-center mb-8">
+            <!-- CUSTOMIZATION FOR BUYER: Swap this out for your actual SaaS title or logo asset -->
+            <div class="text-indigo-500 font-black text-2xl tracking-tight mb-2">DeepStack</div>
+            <h1 class="text-xl font-bold text-white">Access your account</h1>
+            <p class="text-slate-400 text-xs mt-1">Enter your parameters below to initialize secure authorization.</p>
+        </div>
+
+        <!-- Login Processing Form -->
+        <form id="loginForm" class="space-y-5">
+            <div>
+                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email Address</label>
+                <input type="email" required id="emailInput" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="name@domain.com">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Password</label>
+                <input type="password" required id="passwordInput" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="••••••••">
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 rounded-xl text-sm transition-colors mt-2 cursor-pointer">
+                Authenticate Session
+            </button>
+        </form>
+    </div>
+
+    <!-- Script layer connecting your fullstack authentication logic router -->
+    <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

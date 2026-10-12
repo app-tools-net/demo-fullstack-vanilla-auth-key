@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Application Workspace</title>
+    
+    <!-- FIXED CORE STYLING ENGINE: Official browser runtime for compiling utility styling classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Clean external stylesheet link for buyer modifications -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
+
+    <!-- Top Header Navigation Desk Bar -->
+    <header class="border-b border-slate-900 bg-slate-900/20 backdrop-blur px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-6">
+            <span class="text-indigo-500 font-black tracking-tight">DeepStack</span>
+            <nav class="hidden sm:flex gap-4 text-xs text-slate-400 font-medium">
+                <a href="#" class="text-white bg-slate-900 px-3 py-1.5 rounded-lg">Database Console</a>
+                <a href="#" class="hover:text-white px-3 py-1.5 transition-colors">User Profiles</a>
+            </nav>
+        </div>
+        <button id="logoutBtn" class="text-xs font-semibold bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 px-3 py-1.5 rounded-xl transition-colors cursor-pointer">
+            Terminate Session
+        </button>
+    </header>
+
+    <!-- Main Live Dynamic Stream Telemetry Workspace Grid Container -->
+    <main class="max-w-7xl mx-auto p-6 sm:p-10">
+        
+        <!-- Live Connection Database Status Badge Banner -->
+        <div class="mb-8 bg-indigo-950/40 border border-indigo-900/60 rounded-2xl p-4 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+            <div>
+                <h2 class="text-sm font-bold text-white">Supabase Cloud Synchronization</h2>
+                <p class="text-xs text-slate-400 mt-0.5">Your live database tables layer profile endpoint status tracking is operational.</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-indigo-400 bg-indigo-950 px-3 py-1.5 rounded-xl border border-indigo-900/40 w-fit">
+                Database Status: Active Sync
+            </div>
+        </div>
+
+        <!-- Full Stack Dynamic Metrics Counter Display Blocks Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 mb-8">
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">User Records Count</div>
+                <div class="text-2xl font-black text-white mt-1">412</div>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">API Ingestion Call Logs</div>
+                <div class="text-2xl font-black text-white mt-1">18,941</div>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Storage Bucket Usage</div>
+                <div class="text-2xl font-black text-white mt-1">4.2 GB</div>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl">
+                <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Webhook Route Status</div>
+                <div class="text-2xl font-black text-emerald-400 mt-1">Listening</div>
+            </div>
+        </div>
+
+        <!-- Interactive Sandbox Area Form Control Field Block Component -->
+        <div class="bg-slate-900/20 border border-slate-900 rounded-3xl p-6 sm:p-8">
+            <h3 class="text-base font-bold text-white mb-1">Serverless CRUD Ingestion Testing Sandbox</h3>
+            <p class="text-xs text-slate-400 mb-6">INTEGRATION NOTE: Use the Supabase client JS script module inside your auth.js logic to wire this layout to table triggers.</p>
+            
+            <form id="sandboxForm" class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl">
+                <input type="text" required id="dataKeyInput" placeholder="Record Entry Label (e.g., username)" class="bg-slate-950 border border-slate-800/80 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-indigo-500 transition-colors w-full">
+                <input type="text" required id="dataValueInput" placeholder="String data value payload block" class="bg-slate-950 border border-slate-800/80 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-indigo-500 transition-colors w-full">
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-6 rounded-xl text-xs transition-colors cursor-pointer">
+                    Commit Entry to Row Table
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

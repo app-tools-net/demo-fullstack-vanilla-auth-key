@@ -1,0 +1,19 @@
+/* products/3-fullstack-vanilla/css/style.css */
+
+/* Core typography layer optimizations for crisp cross-browser parsing */
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Force smooth frame rendering behavior during anchor transitions */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Accessibility interface properties for focused components */
+button:focus-visible, 
+input:focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
